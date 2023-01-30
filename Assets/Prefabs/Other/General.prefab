@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1645131413391668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4130912299630126}
+  - component: {fileID: 114317926047845104}
+  m_Layer: 0
+  m_Name: General
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4130912299630126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645131413391668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114317926047845104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645131413391668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f3d2ee325e31f247ba6eb36c9df1e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  campaignMaps:
+  - {fileID: 114714198339914606, guid: 03ef6f713e27c884d8a5f9ea532d476d, type: 3}
+  - {fileID: 3529948682871282747, guid: 4032da5f181b3ab419855265778c5e63, type: 3}
+  - {fileID: 3639208554018090309, guid: b82984414ef8cdf41a0ea139842f1689, type: 3}
+  - {fileID: 114154350607292852, guid: f4c17d7730fd840638b9c78f01925ad1, type: 3}
+  - {fileID: 114817375976715662, guid: 8eceed149154441c9b89b09e1303f793, type: 3}
+  - {fileID: 114209932217441924, guid: 3de96ffcf4ec52d4483d091451ffa618, type: 3}
+  - {fileID: 114982494469330096, guid: f13a465c6416e3444803318828259eb0, type: 3}
+  contendersMaterials:
+  - {fileID: 2100000, guid: b39d0b239d0d6a9478705cf5bb83dcb3, type: 2}
+  - {fileID: 2100000, guid: 81c02e0017f1450458e2371386ac65d4, type: 2}
+  - {fileID: 2100000, guid: 67cd57064baa87c4a9469fe835e6eb22, type: 2}
+  - {fileID: 2100000, guid: 84d16586fd5358f4498c79fce3f01eeb, type: 2}
+  skirmishMaps:
+  - {fileID: 114682306325691300, guid: 6d0b0c769f14a994bb5aeeea15810b88, type: 3}
+  - {fileID: 114642524530655328, guid: 5bec2e1b6ac733645a0cd84582ac4ca5, type: 3}

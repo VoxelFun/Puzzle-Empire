@@ -1,0 +1,7 @@
+Select unit to begin move.
+If you are close enough, you can select enemy's unit. This will begin fight between yours and enemy's units.
+
+There are seven diffrent types of gems on the board.
+Red, Blue, Green, Yellow and Purple gems are used to cast spells. White gem gives one random gem type that is used by your unit.
+Skull gems are use to deal damage.
+To cast a spell, click on gems status(under your unit) and select spell(if you hold, you will see spell description). Remember that you have to have enough gems collected.

@@ -1,0 +1,8 @@
+Piechur;My prince, Nertordia's army has occupied our villages.
+Garam;These lands belong to Loxandria kingdom. Leave them!
+Strzelec;...
+Strzelec;No.
+Piechur;We have been betrayed.
+Garam;Maybe it is only provocation of the opposition.
+Piechur;We won't do anything?
+Garam;No.

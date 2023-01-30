@@ -1,0 +1,567 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1148538012315614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4653848435562682}
+  m_Layer: 0
+  m_Name: Races
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4653848435562682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148538012315614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4488857423996826}
+  - {fileID: 4361266845974048}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1416032698631132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4488857423996826}
+  - component: {fileID: 114775816158104928}
+  m_Layer: 0
+  m_Name: Humans
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4488857423996826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416032698631132}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4653848435562682}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114775816158104928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416032698631132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912f0991c135c2241ad61d4fde5c2d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainBuilding:
+    Name: 
+    description: 
+    cost: 0
+    gameObject: {fileID: 1498373954570648, guid: a646db91ed3de0041aa6b7a2faccfba9,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: a83b6f7d451c4e94aae71a0209bcacf2, type: 2}
+    - {fileID: 2100000, guid: 0506753a03a2f134b93900c072eac65c, type: 2}
+    - {fileID: 2100000, guid: a6d4f772a0144054a8a9fc07f259b3e3, type: 2}
+    - {fileID: 2100000, guid: c37a147ab1f208540ab6cdf84f7b57b2, type: 2}
+    greyMaterial: {fileID: 0}
+    icon: {fileID: 0}
+    sprite: {fileID: 0}
+    size: 1
+    animationSpeed: 1
+    id: 0
+  scaffolding: {fileID: 1062163664518400, guid: e99b26cd9ef970b4b98d20c91a5cab45,
+    type: 3}
+  buildings:
+  - Name: Tower
+    description: Gives additional armor to ally units
+    cost: 250
+    gameObject: {fileID: 1288237916464684, guid: 3b88704459e8fba4f91c24bfcdf34f46,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: b5467960206ae1a45a9a1340859c5231, type: 2}
+    - {fileID: 2100000, guid: 308513096ef40f04696094fd0ccb0c5c, type: 2}
+    - {fileID: 2100000, guid: a73213ea5e6047d48be4e7e4adb6971d, type: 2}
+    - {fileID: 2100000, guid: eace97e94910f3443bcf0318001d0fa0, type: 2}
+    greyMaterial: {fileID: 0}
+    icon: {fileID: 21300000, guid: 2c066cb08749e824c805c68b0cb0805b, type: 3}
+    sprite: {fileID: 21300000, guid: a79553529772b94418020129d0374702, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 0
+  - Name: Barracks
+    description: Trains unit
+    cost: 500
+    gameObject: {fileID: 1228618597530950, guid: a1c458b729a0c8a41b7bade508cd56ba,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 04a251a21e835b04fb9c48019c1ad7f5, type: 2}
+    - {fileID: 2100000, guid: 946f54d65629e4c448e269364e17cd2b, type: 2}
+    - {fileID: 2100000, guid: 878e9091bf83d4c43b690b6a1720a3c1, type: 2}
+    - {fileID: 2100000, guid: 6c1963163d06736458ab6fc57b8e89e3, type: 2}
+    greyMaterial: {fileID: 0}
+    icon: {fileID: 21300000, guid: b1710325cd8d98a48906becfebeebaeb, type: 3}
+    sprite: {fileID: 21300000, guid: 8960b794c4a74be46a59ab32e8adb0c5, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 1
+  - Name: Guard Tower
+    description: Gives additional armor to ally units. Takes part in combat.
+    cost: 600
+    gameObject: {fileID: 1565084786307734, guid: 25bef24b2aaae1942b9cf38aa5f91ae4,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 8194f61d11be0ea499c19666ed96882e, type: 2}
+    - {fileID: 2100000, guid: 55e9e8eda88b7d4468603847d4e4af89, type: 2}
+    - {fileID: 2100000, guid: 3c5af5f8df7a9b14bbfc4355e5612279, type: 2}
+    - {fileID: 2100000, guid: 887c6cbe8f549b140be7e056d32a3365, type: 2}
+    greyMaterial: {fileID: 0}
+    icon: {fileID: 21300000, guid: 712a0385347c3bd49814a9ae7f0f9492, type: 3}
+    sprite: {fileID: 21300000, guid: 0dd8751e7f0e9e843bbc5e91f5a03f8b, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 2
+  units:
+  - Name: Footman
+    description: Can stun enemy and block auto attack
+    cost: 150
+    gameObject: {fileID: 1729830242118416, guid: 3b9d51ba7524fc24982c6f5d7dc7e1f1,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 08c09c6fa6b6b334ea78609672c09812, type: 2}
+    - {fileID: 2100000, guid: 225f5befc937de54495f6b2ea2044a2d, type: 2}
+    - {fileID: 2100000, guid: 41f1a58d48e2c9440a9f1b29cf13e735, type: 2}
+    - {fileID: 2100000, guid: 03f18583f62fceb4292f231f912b5a97, type: 2}
+    greyMaterial: {fileID: 2100000, guid: c55544ad299e397499b9799a60a9353c, type: 2}
+    icon: {fileID: 21300000, guid: 47573590073365c46b51cbf348c21a81, type: 3}
+    sprite: {fileID: 21300000, guid: ff04d08212dda5b4f8e36da338548afa, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 0
+  - Name: Rifleman
+    description: Deals a lot of damage and can get additional turn
+    cost: 250
+    gameObject: {fileID: 1466159784142586, guid: e1d34e26e39e60840b7b5a781b6d27ee,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 3e64bca83045ee84e8a5aa74fb401a66, type: 2}
+    - {fileID: 2100000, guid: 355b7b462066e214e86b48047408b768, type: 2}
+    - {fileID: 2100000, guid: 2c097c3c5be15ce469f5ace543eec1d5, type: 2}
+    - {fileID: 2100000, guid: 953a904795fe6544186acb53123efbb9, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 6ff3f4df17b81fc4eb77a8569837cc58, type: 2}
+    icon: {fileID: 21300000, guid: 7cc4fce6f0bcf26478fc11be62fef071, type: 3}
+    sprite: {fileID: 21300000, guid: 8e9ef3ec326d78447a9525f0b9b65e7e, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 1
+  - Name: Sorceress
+    description: Has support spells like silent and heal
+    cost: 220
+    gameObject: {fileID: 1797796110710960, guid: 728b6f2b389ba40419b9f34993d0a42c,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 1272778b64c35bb4889b7f922ead6a0f, type: 2}
+    - {fileID: 2100000, guid: fdde4f4ea22cab54d8ba9550f5516e81, type: 2}
+    - {fileID: 2100000, guid: e870583b0671b1a4c89c817444002d7c, type: 2}
+    - {fileID: 2100000, guid: ed16b3a5365eec84a8ececda7715f7a1, type: 2}
+    greyMaterial: {fileID: 2100000, guid: b8ad77b3ed68f7e4bae765f8b144226c, type: 2}
+    icon: {fileID: 21300000, guid: 31bc91b5fe5235940bfe575cbbde9157, type: 3}
+    sprite: {fileID: 21300000, guid: 84c438b3e3a5bab4eb2faae03a888d59, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 2
+  - Name: Gunner
+    description: Can modify gems and deal a lot of damage
+    cost: 450
+    gameObject: {fileID: 1406615892445172, guid: 235ea41153fab2248a06e95a267f2ed0,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 030b60b19036ab946ac2e29d2a88ce6b, type: 2}
+    - {fileID: 2100000, guid: cc979945467db0944b6f168626568c98, type: 2}
+    - {fileID: 2100000, guid: 2e1af12a476d64842a8c2f4deb032464, type: 2}
+    - {fileID: 2100000, guid: 7126126b31457004c9152cef0c67003b, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 597a6b1e7457f1942880ff57708f0693, type: 2}
+    icon: {fileID: 21300000, guid: bf2063324c9670643bb115ad783cb37f, type: 3}
+    sprite: {fileID: 21300000, guid: 01c7038c27c2ecc43b9e1ad749f4d016, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 3
+  - Name: Knight
+    description: Can modify gems and deal damage
+    cost: 550
+    gameObject: {fileID: 1303547993977294, guid: 6dc0a91f104ce1940bb450a0de79eb61,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 3695815dd6aeac14eb3d08a4cf7914a8, type: 2}
+    - {fileID: 2100000, guid: 1011c9e6e96685c468e44c5dd090d3cc, type: 2}
+    - {fileID: 2100000, guid: f54edcb9c85489c4ca5f0c82cf18012d, type: 2}
+    - {fileID: 2100000, guid: db40e0d71f7e8014dbccc06e344e2615, type: 2}
+    greyMaterial: {fileID: 2100000, guid: a87ebd62b668c01469fb1c1d3f6da60a, type: 2}
+    icon: {fileID: 21300000, guid: c09a9e90ed82bec42ab1167c3ac04aa8, type: 3}
+    sprite: {fileID: 21300000, guid: 0fe4a11c4bd428d4bb501ab1bf2e25b6, type: 3}
+    size: 0.9
+    animationSpeed: 1
+    id: 4
+  - Name: Flying Cannon
+    description: Can destroy gems and deal damage
+    cost: 600
+    gameObject: {fileID: 1718313131260712, guid: 05586ef48c9c0de4c84580bb31ed93b8,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: e2eaa6574227fa14e8edc8522099e3ef, type: 2}
+    - {fileID: 2100000, guid: 0be6b494db3487146b455f530b178274, type: 2}
+    - {fileID: 2100000, guid: 5ccc9d7ac7237c541982dae63b8ded13, type: 2}
+    - {fileID: 2100000, guid: 92c3ee7372605a34d9c83e4d3a98f303, type: 2}
+    greyMaterial: {fileID: 2100000, guid: c35fde51a71f70541a69f28429f4e47d, type: 2}
+    icon: {fileID: 21300000, guid: cb84e015a661b48498be6f11976d9355, type: 3}
+    sprite: {fileID: 21300000, guid: 4b0593b8e2aff3543b8255e40c534dbd, type: 3}
+    size: 0.8
+    animationSpeed: 0.55
+    id: 5
+  - Name: War Machine
+    description: Can reduce enemy armor and deal damage
+    cost: 850
+    gameObject: {fileID: 1598158001280004, guid: ab69970873826074fa8c4e9a3fa99594,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 2c2ec74e5724ebf4ea8ea9eb604f9a17, type: 2}
+    - {fileID: 2100000, guid: d35bb1474fb1f054f9a5401d968e727c, type: 2}
+    - {fileID: 2100000, guid: 762d411d4013b944daf0d704ee666778, type: 2}
+    - {fileID: 2100000, guid: b9fc878e132d82d47afe0aa5647b6f5d, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 2d11b549474c3c64eaa9137e5b220788, type: 2}
+    icon: {fileID: 21300000, guid: d78e4d919495b1847b553940a8284357, type: 3}
+    sprite: {fileID: 21300000, guid: f4266596655b7ac4ab6ff9eebd59abc8, type: 3}
+    size: 1
+    animationSpeed: 0.7
+    id: 6
+  garam:
+    Name: Lexand
+    description: 
+    cost: 0
+    gameObject: {fileID: 1286438526732674, guid: 8ebee6c6c6f997a4e8fb777981f0d6f8,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: a7f663a083b84144685b2733093f8424, type: 2}
+    - {fileID: 2100000, guid: e3961b29b1d74d94aae27e064e7445f7, type: 2}
+    - {fileID: 2100000, guid: c604f319a994eb54dada9f26bd756c86, type: 2}
+    - {fileID: 2100000, guid: 80912bda9ecd878409718fa45ec2ae79, type: 2}
+    greyMaterial: {fileID: 2100000, guid: c5effeade0c0bbc42b4d98a70d3da8fe, type: 2}
+    icon: {fileID: 21300000, guid: 890562a048f030d4d9059be5c3a4e164, type: 3}
+    sprite: {fileID: 21300000, guid: 9a6c2e56613b6824dae9a08a1c7b22e0, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 0
+  darek:
+    Name: Erard
+    description: 
+    cost: 0
+    gameObject: {fileID: 1503611226413220, guid: d05b14e0c484d594c9c776b981657915,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 922e97058072ab24db69e05803264acd, type: 2}
+    - {fileID: 2100000, guid: da2190e54be5ba744a49c432e18c00bd, type: 2}
+    - {fileID: 2100000, guid: ebe92806b1c22c74ea56510897cbeeb5, type: 2}
+    - {fileID: 2100000, guid: ca6396fd83a3c2b4ab3112bb105a4e69, type: 2}
+    greyMaterial: {fileID: 2100000, guid: c332b373b438db24da82df7c9babd524, type: 2}
+    icon: {fileID: 21300000, guid: ff5508fcf54eb464e9f20db59feac635, type: 3}
+    sprite: {fileID: 21300000, guid: 4cfaee1f2c156414b97b973453fe4e70, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 1
+  trynda:
+    Name: Gare
+    description: 
+    cost: 0
+    gameObject: {fileID: 1697883632501338, guid: 4dcf1ed50ac39461a8e81dc3c59291b6,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: df16c6972a2d94372962e4fbb64e94d3, type: 2}
+    - {fileID: 2100000, guid: 6e1a1125b3a15465bbd10dbf490f3e6d, type: 2}
+    - {fileID: 2100000, guid: f4d85225bc2dc471d8ba9ed8a63cb5b3, type: 2}
+    - {fileID: 2100000, guid: 814a233a99eef4257acf8d416076e0a1, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 9d891df7fa3d947c5b3371d559446240, type: 2}
+    icon: {fileID: 21300000, guid: 753160804161fa346b4814862548074e, type: 3}
+    sprite: {fileID: 21300000, guid: 285ce365a40b4954a88a3c6b2797fb0d, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 2
+--- !u!1 &1702891384138720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4361266845974048}
+  - component: {fileID: 114443669851018036}
+  m_Layer: 0
+  m_Name: Undeads
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4361266845974048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702891384138720}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4653848435562682}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114443669851018036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702891384138720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bdf657ae0037045b25fa8d1dba21a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainBuilding:
+    Name: 
+    description: 
+    cost: 0
+    gameObject: {fileID: 1046506287816520, guid: 02efe03b649d94f4fb4711ac7d1d99d8,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 8dcc7d0e7804a3e4d91a6caa82ca0897, type: 2}
+    - {fileID: 2100000, guid: 32abc13fb2b601b47a107b2cdb863a1a, type: 2}
+    - {fileID: 2100000, guid: 7389cee96af77f04e8267550c4d86341, type: 2}
+    - {fileID: 2100000, guid: 1115157e5d061b940b563302c811f385, type: 2}
+    greyMaterial: {fileID: 0}
+    icon: {fileID: 21300000, guid: fd4e3151c5d94a043afb2e97ff88fe54, type: 3}
+    sprite: {fileID: 0}
+    size: 1
+    animationSpeed: 1
+    id: 0
+  scaffolding: {fileID: 1635649371514238, guid: 5a1bec2fcd1383842bbcf73b422205fa,
+    type: 3}
+  buildings:
+  - Name: Ziggurat
+    description: Gives additional armor to ally units
+    cost: 250
+    gameObject: {fileID: 1469090382482116, guid: 896dc3c7006057647b864b269cbdbee7,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 32bc2b3f6ab6ead4ea6f87251f121017, type: 2}
+    - {fileID: 2100000, guid: af3521f4385d81e499c47520f948a3b6, type: 2}
+    - {fileID: 2100000, guid: 763155d85a7c75348ac6bb336c79ec0d, type: 2}
+    - {fileID: 2100000, guid: d884252d843aad04fa51cfdc501befc6, type: 2}
+    greyMaterial: {fileID: 0}
+    icon: {fileID: 21300000, guid: ed8f7938136a0df45bf0eb8f120bc3fb, type: 3}
+    sprite: {fileID: 21300000, guid: e3b13a2b342bc3543b1de4b84728314a, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 0
+  - Name: Crypt
+    description: Trains unit
+    cost: 500
+    gameObject: {fileID: 1506480310854380, guid: f995ce27785a7e74088f2d04813a64ec,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: f674b2319ef42fe41acc5d537b61b3dd, type: 2}
+    - {fileID: 2100000, guid: 28c9121b3ffb85a489e984e3e5fc7ead, type: 2}
+    - {fileID: 2100000, guid: 8923439927d00ef4ca0b112d2de69169, type: 2}
+    - {fileID: 2100000, guid: 5080bf6d315bd3d479b3fb39d44cf78d, type: 2}
+    greyMaterial: {fileID: 0}
+    icon: {fileID: 21300000, guid: 7c8d4230e6b78f148a5b218c12b35822, type: 3}
+    sprite: {fileID: 21300000, guid: c4b0eb1b8e72a8c49ab397f67d2c0b13, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 1
+  - Name: Ghost Tower
+    description: Gives additional armor to ally units. Takes part in combat.
+    cost: 600
+    gameObject: {fileID: 1345148067863452, guid: d07e2fc61a300924bb1ed94c748ad43d,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 32bc2b3f6ab6ead4ea6f87251f121017, type: 2}
+    - {fileID: 2100000, guid: af3521f4385d81e499c47520f948a3b6, type: 2}
+    - {fileID: 2100000, guid: 763155d85a7c75348ac6bb336c79ec0d, type: 2}
+    - {fileID: 2100000, guid: d884252d843aad04fa51cfdc501befc6, type: 2}
+    greyMaterial: {fileID: 0}
+    icon: {fileID: 21300000, guid: 58074cc855850f649b8255ac755f7c0e, type: 3}
+    sprite: {fileID: 21300000, guid: 8fd192e541689994192c306180c8aebb, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 2
+  units:
+  - Name: Ghoul
+    description: Deals damage and heals
+    cost: 150
+    gameObject: {fileID: 1398960098073586, guid: e43f1927e0b294a59b94a9fddd591673,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 06f6359747fdc4aa09da96b5a90d465a, type: 2}
+    - {fileID: 2100000, guid: 9f536e317faf947209f303efc332d733, type: 2}
+    - {fileID: 2100000, guid: c6a94dc6b503840aaa62fd951af0d6f7, type: 2}
+    - {fileID: 2100000, guid: 112bd181a3c2b4c5f95b7a9db399ebdb, type: 2}
+    greyMaterial: {fileID: 2100000, guid: bdb4843be8b814305b1c29892472203c, type: 2}
+    icon: {fileID: 21300000, guid: 4edea2a47dc98604fa11d2313b9041b2, type: 3}
+    sprite: {fileID: 21300000, guid: 8c912dd13a4a058449b7f1fe91f90389, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 0
+  - Name: Attercop
+    description: Can create shield and blind enemy
+    cost: 280
+    gameObject: {fileID: 1711941705553360, guid: 022c31a3b14bb430dba89c0c5ea7f9eb,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 2baf5386f60ca4c18b05c2259f7c2700, type: 2}
+    - {fileID: 2100000, guid: 9baff57c0d48d4b02a58bcedee222ac2, type: 2}
+    - {fileID: 2100000, guid: ef877b7ca4b694e42bc5e55d9b54468b, type: 2}
+    - {fileID: 2100000, guid: 994e7c24b22db44f984b983733fddb21, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 21c3b08d01b9e4be885af1b25b30d18d, type: 2}
+    icon: {fileID: 21300000, guid: f8e5ec48f0720944da6901eb68e95697, type: 3}
+    sprite: {fileID: 21300000, guid: 4cede7639b9774941a8170d4195c1293, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 1
+  - Name: Necromancer
+    description: Can summon skeleton and modify gems
+    cost: 250
+    gameObject: {fileID: 1733380168002566, guid: 2003800d3723e46e08d0423357abca50,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 45d950e1abcf04684a212af7c2abe5b2, type: 2}
+    - {fileID: 2100000, guid: 671e738be6797409ebf528237c2a0f37, type: 2}
+    - {fileID: 2100000, guid: 46a384efbf9744109bce2bb0e358fbe2, type: 2}
+    - {fileID: 2100000, guid: f0a418b2ceb4c49fc80bae2261f8be88, type: 2}
+    greyMaterial: {fileID: 2100000, guid: a85b67ce7a92f4c1884f71a128060599, type: 2}
+    icon: {fileID: 21300000, guid: f6af1e3a5c0a51049871b4d1fd5ac27e, type: 3}
+    sprite: {fileID: 21300000, guid: 900f1beaee62a404690aea329f11c49c, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 2
+  - Name: Meat Wain
+    description: Deals a lot of damage and can reduce amount of enemy's gems
+    cost: 500
+    gameObject: {fileID: 1902334765230950, guid: b495cc330575d4422b4fe36ce0537d91,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: da49b1ae937374916984150d61351958, type: 2}
+    - {fileID: 2100000, guid: 21d0e7f9786a94db48068da478939225, type: 2}
+    - {fileID: 2100000, guid: 53a18fa1c1df94e1bb227c5345350141, type: 2}
+    - {fileID: 2100000, guid: 6347253b241af4912aa50262bc6ebe5b, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 4260f6f31adf6480cb23bd5fc31cb4c4, type: 2}
+    icon: {fileID: 21300000, guid: 6c4f0f81cbb74534fa46d3661f62d02d, type: 3}
+    sprite: {fileID: 21300000, guid: 857a493f4315e8643b39f7be992b0ef0, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 3
+  - Name: Wraith
+    description: Can silent enemy and use his health to cast powerful spells
+    cost: 400
+    gameObject: {fileID: 1196254907142352, guid: 9a2006780af834dd4802446765c9b6ae,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: c2fbd8a5ee0d44612bed1584f2328ebc, type: 2}
+    - {fileID: 2100000, guid: 9c5e4ac98c3cc4ef48620056234736e9, type: 2}
+    - {fileID: 2100000, guid: 425eee04425564b07bc4dbe6eb73b32d, type: 2}
+    - {fileID: 2100000, guid: 621a2515e4ae54526a9bd4786b39dab2, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 87473b6a93261481ea96ace6b019b103, type: 2}
+    icon: {fileID: 21300000, guid: ed7e7b54681dcde4085fa395c129375d, type: 3}
+    sprite: {fileID: 21300000, guid: 8eaed2020a3412b4a9edd71d0b7e9f63, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 4
+  - Name: Repugnance
+    description: Deals damage and modify gems
+    cost: 650
+    gameObject: {fileID: 1707740651711652, guid: b6f8f00eb8802f541ac1abf83d9fb0f8,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 0f96dc0f867db74479c05ef73d21252d, type: 2}
+    - {fileID: 2100000, guid: 12a1ff7c3d12de34ea48cced1e957100, type: 2}
+    - {fileID: 2100000, guid: a38b70cb3b31898439366fc3d48999bd, type: 2}
+    - {fileID: 2100000, guid: ac3d2567a8fac6f488f5de01e04303b0, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 516960ce773b397459cca9bd3086ce6c, type: 2}
+    icon: {fileID: 21300000, guid: 1a968bfa54028404bb0e049f276f52cb, type: 3}
+    sprite: {fileID: 21300000, guid: 9d2d8a5e754bfc64e9c9e1ca4af45f99, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 5
+  - Name: Grisly Viper
+    description: Can deal a lot of damage and freeze enemy unit
+    cost: 750
+    gameObject: {fileID: 1464953962958196, guid: d99759400ffe64b49bac7bd59397d02b,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 3fdfe0da7ada6674dad4a8256cb87fb7, type: 2}
+    - {fileID: 2100000, guid: 803459804096c3541a5dcc183b79dd8c, type: 2}
+    - {fileID: 2100000, guid: 309cf4b53bea12d4e829cad034451d6d, type: 2}
+    - {fileID: 2100000, guid: 143b50724ad10574e97a287bbdc61474, type: 2}
+    greyMaterial: {fileID: 2100000, guid: 8ad67a579e627a24187e39b466a53289, type: 2}
+    icon: {fileID: 21300000, guid: 8df7d335dd403a84881b7bf5a6b85e06, type: 3}
+    sprite: {fileID: 21300000, guid: 4a59b9c2b7f94ee41b11cabb9406212a, type: 3}
+    size: 0.9
+    animationSpeed: 1
+    id: 6
+  piesek:
+    Name: Zarax
+    description: 
+    cost: 0
+    gameObject: {fileID: 1839600688514160, guid: 3a79a0133a40c4e2fbf132f6fe47015d,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 51dc2fb932e744f02b82b53cbf6b6276, type: 2}
+    - {fileID: 2100000, guid: 7959ea79dd10f475a94637c4859b15f2, type: 2}
+    - {fileID: 2100000, guid: efa9c6933e6c145438f98ce352e3b77c, type: 2}
+    - {fileID: 2100000, guid: 56f18cb8ac7fc447aa7f62a4ebaaaf7c, type: 2}
+    greyMaterial: {fileID: 2100000, guid: ffa3fa664000145e49eb2679332a423b, type: 2}
+    icon: {fileID: 21300000, guid: 687926ffcde5a494089be46b62d27269, type: 3}
+    sprite: {fileID: 21300000, guid: bb82f5e5eb8b6ce4c94e95b5346304d1, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 0
+  liszu:
+    Name: Na'Rak
+    description: 
+    cost: 0
+    gameObject: {fileID: 1477017722591808, guid: f0455e216f19c448bb80536c245b959c,
+      type: 3}
+    materials:
+    - {fileID: 2100000, guid: 58cb4b196f7df435196a277bbfc27dc1, type: 2}
+    - {fileID: 2100000, guid: 237d8a163d67d4ba69cb470102430177, type: 2}
+    - {fileID: 2100000, guid: 28d4abce6aea246899d7c48a1e1a15dc, type: 2}
+    - {fileID: 2100000, guid: 41d8224c322c84251ac7ada1b8f292e2, type: 2}
+    greyMaterial: {fileID: 2100000, guid: dc56c092218ed471d9299fe4afc106a7, type: 2}
+    icon: {fileID: 21300000, guid: 09d9bb0597bd188499bdb106f6b97d98, type: 3}
+    sprite: {fileID: 21300000, guid: c9a4ddd2b5ea9ad409b13b7e894f8126, type: 3}
+    size: 1
+    animationSpeed: 1
+    id: 1

@@ -1,0 +1,5 @@
+In main building you can create new units but to train them, you have to have enough gold.
+To earn gold you have to occupy fields like Villages and Gold Mines. They generate income every turn.
+There is another way to spend gold. You can build buildings. Just tap on occupied field to see what can you create.
+As you can see, units can be join into groups(except heroes). Remember that group is much stronger than single unit.
+Main buildings have additional skill, same as villages, regenerate health every turn.

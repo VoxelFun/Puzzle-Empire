@@ -1,0 +1,67 @@
+przywracanie koloru gracza po usnięciu z niego kursora Menu.Controller #231
+
+bohaterowie:
+	levelowanie:
+		ulepszenie czarow
+
+ustawianie odpowiedniego levela
+
+updateDiamentParent wywołuje się dwa razy na starcie przez SetSpellsPriority i CheckSpellsAvailability
+
+Istotne informacje dotyczące czarów:
+- missingHealthDamage, maxHealthDamage nie są ustawione
+- buff do ataku potrafi jedynie wpływać na przeciwnika
+- zbijanie czaszek za pomocą czaru wykrywane jest jako autoatak
+
+Pomysły ulepszenia AI:
+- wybieranie grupek armii od najbliższego od wroga
+
+Zarządzenie oddziałem:
+	if Wybrano cel ataku:
+		Spróbuj zrekrutować jednostki z pola
+		Atakuj
+	
+	Znajdz najsłabszego wroga	
+	if Druga faza ruchu (atak):
+		Spróbuj zrekrutować jednostki z pola
+		Atakuj co znalazłeś
+		
+	Zaznacz armie
+	
+	if Znalazłeś wroga:
+		if Spróbuj zrekrutować jednostki z pobliskich terenów:
+			return
+		Atakuj
+	
+	if Znajdz cel w zasięgu ruchu:
+		Idź do celu
+	
+	if Ruch jest ograniczony przez wroga:
+		Znajdz najbardziej ufortyfikowane miejsce w pobliżu pola
+		if Znaleziono jakiekolwiek:
+			Oznacz jako cel ataku
+			Idź do znalezionego pola
+		
+	if Znajdz pole najblizsze jakiekolwiek celu (szukaj wyłącznie w granicznych):
+		Znajdz pole najblizsze jakiekolwiek celu
+		
+	if Znaleziono jakiekolwiek pole:
+		if Pole graniczy z wrogiem:
+			Znajdz najbardziej ufortyfikowane miejsce w pobliżu pola
+		Idź do znalezionego pola
+	
+	
+
+Zarządzenie oddziałem:
+-	if Wykrywanie wrogiego oddziału w zasięgu ataku:
+		if !Sprawdzenie czy oddział jest pełen:
+-			if Poszukiwanie pola z lepszym czynnikiem pancerza
+			elif Poszukiwanie najbliższego budynku produkcyjnego:
+				if Sprawdzenie czy jest w stanie zakupić jednostkę:
+					Produkcja jednostki
+			elif Poszukiwanie innego wolnego oddziału, którego cel jest dalej:
+					Zwerbowanie jednostek
+			else Dołączenie do innego oddziału
+-	elif Wykrywanie celu w zasięgu ruchu
+	elif Wykrywanie zablokowanego pola w zasięgu ruchu
+	elif Wykrywanie dostępnych celów, wybór najbliższego
